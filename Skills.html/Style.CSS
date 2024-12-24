@@ -1,0 +1,133 @@
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #121212;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-header h2 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.skills-header p {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+/* Skill Cards Container */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Skill Card Style */
+.skill-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* 3D effect for skill icons */
+.skill-icon {
+    background: linear-gradient(145deg, #ff4b5c, #ff6f61);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card:hover .skill-icon {
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.skill-icon i {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* On Hover - Skill Card Enlarges and Shows Fire Effect */
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.skill-card:hover .skill-icon {
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+/* Active state - Skill Card Enlarges with Fire Effect */
+.skill-card.active {
+    transform: scale(1.5);
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 0 30px 15px rgba(255, 0, 0, 0.8), 0 0 20px 10px rgba(255, 140, 0, 0.8);
+    animation: flames 1s infinite alternate;
+}
+
+/* Fire Animation Effect */
+@keyframes flames {
+    0% {
+        box-shadow: 0 0 30px 15px rgba(255, 0, 0, 0.8), 0 0 20px 10px rgba(255, 140, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 40px 20px rgba(255, 140, 0, 0.9), 0 0 30px 15px rgba(255, 0, 0, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 30px 15px rgba(255, 0, 0, 0.8), 0 0 20px 10px rgba(255, 140, 0, 0.8);
+    }
+}
+
+/* Skill Card Title and Description */
+.skill-card h3 {
+    font-size: 1.5rem;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

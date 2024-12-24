@@ -1,0 +1,247 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000; /* Set background to black */
+    color: #fff; /* Set default text color to white */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff0000; /* Set header background to red */
+    color: #fff; /* Text color inside header will be white */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services-header h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff0000; /* Set the heading color to red */
+}
+
+.services-header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #fff; /* Text color inside services will be white */
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.service-card {
+    background-color: #fff; /* Service card background is white */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #ff0000; /* Icon color is red */
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #333; /* Heading inside the card will be dark */
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #777; /* Description text color */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Footer text color */
+}
+
+footer p {
+    font-size: 14px;
+}
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000; /* Set background to black */
+    color: #fff; /* Default text color to white */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff0000; /* Header background red */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services-header h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.services-header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Service Card Styling */
+.service-card {
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ff0000; /* Red background when hover */
+    color: #000; /* Text color changes to black */
+}
+
+.service-card:hover i {
+    color: #000; /* Icon color changes to black when hover */
+}
+
+.service-card h3, .service-card p {
+    color: #000; /* Text inside the card turns black on hover */
+}
+
+/* Icon Styling */
+.service-card i {
+    font-size: 40px;
+    color: #ff0000; /* Initial icon color red */
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+}
+/* Header Styling */
+.service-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.service-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-image: linear-gradient(45deg, #ff6f00, #f44336);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-description {
+    font-size: 18px;
+    color: #ddd;
+    margin-top: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hover effect */
+.service-title:hover {
+    transform: scale(1.05);
+    color: #fff;
+    cursor: pointer;
+}

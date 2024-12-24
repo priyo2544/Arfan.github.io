@@ -1,0 +1,81 @@
+/* Education Section */
+.education {
+    background-color: #121212;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.education h1 {
+    font-size: 36px;
+    color: #f03123;
+}
+
+.education-item {
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.education-item:hover {
+    background-color: #b80000;
+}
+
+.education-item h2 {
+    font-size: 28px;
+    color: #51bef0;
+}
+
+.school-name {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.duration {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #aaa;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1a1a1a;
+    color: #ff6f61;
+}
+/* নিচের সাদা ব্যাকগ্রাউন্ড রিমুভ করে পুরো পেজ কালো করা */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* সম্পূর্ণ কালো ব্যাকগ্রাউন্ড */
+    color: #fff; /* সাদা টেক্সট কালার */
+    height: 100%;
+}
+
+footer, section {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* নিচের অংশও কালো */
+}
+
+* {
+    box-sizing: border-box; /* পুরো পেজে স্পেসিং ঠিক রাখা */
+}
